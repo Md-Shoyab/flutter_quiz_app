@@ -35,7 +35,7 @@ class StartScreen extends StatelessWidget {
               backgroundColor: Colors.white,
             ),
             icon: const Icon(Icons.keyboard_arrow_right),
-            label: const Text('Start Quiz!'),
+            label: const Text('Start Quiz!!'),
           ),
         ],
       ),
