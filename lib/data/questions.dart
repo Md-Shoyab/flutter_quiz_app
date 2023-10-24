@@ -28,8 +28,7 @@ const questions = [
       'Render UI that doesn\'t depends on data',
     ],
   ),
-
-    QuizQuestions(
+  QuizQuestions(
     'Which widget should you try to use more often: StatelessWidget or StatefulWidget',
     [
       'StatelessWidget',
