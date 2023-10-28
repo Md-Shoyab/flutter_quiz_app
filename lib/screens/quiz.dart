@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz_app/constants/colors.dart';
 import 'package:flutter_quiz_app/screens/question_screen.dart';
 import 'package:flutter_quiz_app/screens/start_screen.dart';
 
@@ -31,8 +32,8 @@ class _QuizState extends State<Quiz> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 247, 59, 2),
-                Color.fromARGB(255, 241, 90, 44),
+                AppColors.primaryColor,
+                AppColors.secondaryPrimaryColor,
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

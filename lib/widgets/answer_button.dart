@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz_app/constants/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AnswerButton extends StatelessWidget {
   const AnswerButton({
@@ -17,8 +19,8 @@ class AnswerButton extends StatelessWidget {
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 40),
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.orange,
+          backgroundColor: AppColors.white,
+          foregroundColor: AppColors.primaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(40),
           ),
@@ -26,6 +28,13 @@ class AnswerButton extends StatelessWidget {
         child: Text(
           answerText,
           textAlign: TextAlign.center,
+          style: GoogleFonts.geologica(
+            textStyle: const TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+              color: AppColors.secondaryPrimaryColor,
+            ),
+          ),
         ),
       ),
     );
