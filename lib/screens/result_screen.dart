@@ -66,7 +66,16 @@ class ResultScreen extends StatelessWidget {
                 foregroundColor: AppColors.primaryColor,
               ),
               icon: const Icon(Icons.refresh),
-              label: const Text('Restart Quiz :)'),
+              label: Text(
+                'Restart Quiz :)',
+                style: GoogleFonts.geologica(
+                  textStyle: const TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.primaryColor,
+                  ),
+                ),
+              ),
             )
           ],
         ),

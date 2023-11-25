@@ -76,7 +76,6 @@ class CorrectAnswer extends StatelessWidget {
             text: (itemData[jsonKey] as String),
             style: GoogleFonts.geologica(
               textStyle: TextStyle(
-                // fontSize: 20,
                 fontWeight: FontWeight.w200,
                 color: jsonKey == 'user_answer'
                     ? const Color.fromARGB(255, 255, 179, 255)
