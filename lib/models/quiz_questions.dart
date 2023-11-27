@@ -4,7 +4,7 @@ class QuizQuestions {
   final String text;
   final List<String> answers;
 
-  List<String> getShuffledAnswers() {
+  List<String> get shuffledAnswers {
     final shuffedList = List.of(answers);
     shuffedList.shuffle();
     return shuffedList;
