@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz_app/constants/app_asset_path.dart';
+import 'package:flutter_quiz_app/constants/app_strings.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/colors.dart';
+import '../constants/app_colors.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this._startQuiz, {super.key});
@@ -14,14 +16,14 @@ class StartScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
-            'assets/images/quiz_logo.png',
+            AppAssetPath.quizLogoImagePath,
             width: 200,
           ),
           const SizedBox(height: 80),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 50),
             child: Text(
-              'Learn Anything from the Fun of Quiz App!',
+              AppStrings.learnAnythingFromQuizText,
               textAlign: TextAlign.center,
               style: GoogleFonts.geologica(
                 textStyle: const TextStyle(
@@ -42,7 +44,7 @@ class StartScreen extends StatelessWidget {
             ),
             icon: const Icon(Icons.keyboard_arrow_right),
             label: Text(
-              'Start Quiz!!',
+              AppStrings.startQuizText,
               style: GoogleFonts.geologica(
                 textStyle: const TextStyle(
                   fontSize: 15,

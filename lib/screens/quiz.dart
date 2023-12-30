@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz_app/constants/colors.dart';
+import 'package:flutter_quiz_app/constants/app_colors.dart';
 import 'package:flutter_quiz_app/data/questions.dart';
 import 'package:flutter_quiz_app/screens/question_screen.dart';
 import 'package:flutter_quiz_app/screens/result_screen.dart';
@@ -14,7 +14,7 @@ class Quiz extends StatefulWidget {
 
 class _QuizState extends State<Quiz> {
   List<String> selectedAnswers = [];
-  var activeScreen = 'start-screen';
+  String activeScreen = 'start-screen';
 
   void switchScreen() {
     setState(() {

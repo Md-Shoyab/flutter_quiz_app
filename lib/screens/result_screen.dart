@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz_app/constants/app_strings.dart';
 import 'package:flutter_quiz_app/data/questions.dart';
 import 'package:flutter_quiz_app/widgets/questions_summary.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/colors.dart';
+import '../constants/app_colors.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -34,8 +35,9 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final numTotalQuestions = questions.length;
-    final numCorrectAnswers =
-        summaryData.where((data) => data['user_answer'] == data['correct_answer']).length;
+    final numCorrectAnswers = summaryData
+        .where((data) => data['user_answer'] == data['correct_answer'])
+        .length;
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -65,7 +67,7 @@ class ResultScreen extends StatelessWidget {
               ),
               icon: const Icon(Icons.refresh),
               label: Text(
-                'Restart Quiz :)',
+                AppStrings.restartQuizText,
                 style: GoogleFonts.geologica(
                   textStyle: const TextStyle(
                     fontSize: 18.0,
